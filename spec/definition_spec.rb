@@ -42,7 +42,7 @@ describe(".all") do
       test_definition.save()
       test_definition2 = Definition.new("unicorny")
       test_definition2.save()
-      expect(Definition.find(test_definition.id())).to(eq(test_word))
+      expect(Definition.find(test_definition.id())).to(eq(test_definition))
     end
   end
 end
