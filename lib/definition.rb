@@ -1,8 +1,13 @@
 class Definition
   @@definitions = []
 
-  define_method(:initialize) do |attributes|
+  define_method(:initialize) do |definition|
+    @definition = definition
     @id = @@definitions.length()
+  end
+
+  define_method(:definition) do
+    @definition
   end
 
   define_method(:id) do

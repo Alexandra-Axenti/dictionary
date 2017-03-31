@@ -1,3 +1,5 @@
+require('./lib/definition')
+
 class Word
   @@words = []
 
