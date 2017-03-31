@@ -57,7 +57,7 @@ describe(".all") do
   describe('#add_definition') do
     it("adds a new definition for a word") do
       test_word = Word.new("jenga code")
-      test_definition = Definition.new("When the whole app collapses after one alters just a single block of code.")
+      test_definition = Definition.new("when the whole app collapses after one alters just a single block of code")
       test_word.add_definition(test_definition)
       expect(test_word.definitions()).to(eq([test_definition]))
     end
