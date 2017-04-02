@@ -1,6 +1,6 @@
 All dictionary entries:
 
 <% @words.each() do |word| %>
-<li><%= word.word() %> - <%= word.definitions()[0].definition() %> </li>
+<li><a href='/words/<%= word.id() %>'><%= word.word() %> - <%= word.definitions()[0].definition() %> </a></li>
 <% end %>
 <a href="/">Home</a>

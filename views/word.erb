@@ -1,0 +1,15 @@
+  <ul>
+    <div><%= @word.word() %></div><br>
+    <div><% for key in @word.definitions() do %>
+    <%= key.definition() %><br><br>
+    <% end %><div><br>
+  </ul>
+
+  <form action="/words/<%= @word.id() %>" method="post">
+    <input id='id' name='id' type='hidden' value='<%= @word.id() %>'>
+    <label for="definition">Add another definition:&emsp;</label>
+    <input id="definition" name="definition" type="text">
+    <button type="submit">Go</button>
+  </form>
+
+  <a href="/">Home</a>
